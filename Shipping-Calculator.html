@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shipping Calculation</title>
 
-  <link rel="stylesheet" href="Shipping-Calculations.css">
+  <link rel="stylesheet" href="Shipping-Calculator1.css">
 </head>
 <body>
  <h2>Shipping Calculator</h2>
@@ -14,9 +14,11 @@
 
 <p> Orders over £50 = Free shipping </p>
 
-<input class="cost-input js-cost-input" placeholder="Enter weight" type="text">
 
-<button class="calculate- button">Calculate</button>
+ <input  placeholder="Cost of order" type="text" class="js-cost-input  cost-input" onkeydown=" handleCostKeydown (event)"> 
+
+   <button class="calculate-button"    onclick="
+  calculateTotal();"> Calculate</button>
 
 <p class="js-total-cost">Cost</p> 
 
