@@ -3,7 +3,7 @@
 <p>I created a web app to calculate the cost of shipping packages. If the order costs less than £40 you pay £10 for shipping and if the order costs over £40, shipping is free.</p>
 
 
-![An image of the live web app](live-website.png)
+![An image of the live web app:](live-website.png)
 
 The project contains ***HTML***, ***CSS***, ***JavaScript*** for some interactivity.
 
