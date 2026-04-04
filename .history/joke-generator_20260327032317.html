@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joke Generator project </title>
+
+  <link rel="stylesheet" href="joke-generator.css">
+
+  <style>
+    body{
+      background-color: rgb(255, 102, 222);
+
+    }
+
+    .description-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+    .description-para{
+      font-family: Arial;
+      font-size: 30px;
+    }
+
+
+    .joke-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 40px 40px;
+    }
+
+    .joke-button{
+      background-color: rgb(255, 244, 230);
+      border:none;
+      border-radius: 5px;
+      font-size: 25px;
+      padding: 20px 30px;
+      cursor: pointer;
+      border-width: 5px;
+      
+    }
+
+      .joke-button:hover{
+      background-color:rgba(251, 250, 211, 0.678);
+      border:none;
+      border-radius: 5px;
+      font-size: 25px;
+      padding: 20px 30px;
+      cursor: pointer;
+      border-width: 5px;
+      
+    }
+
+
+
+  
+  </style>
+
+
+</head>
+
+
+<body>
+  
+ <div class="description-div">
+
+    <p class="description-para">
+    Simple jokes to make you laugh
+    </p>
+
+  </div>
+
+  <div class="joke-div">
+
+    <button class="js-generate-button joke-button">
+    Tell me a joke
+    </button>
+
+  </div>
+
+
+  <p>
+
+
+  </p>
+
+
+
+
+  <script>
+
+    //eventlistner and add an event listener
+    // create function that generates html 
+    //create a function that cycles throught the array 
+    //change page's background colur when button is clicked  use class list if statement
+
+
+
+
+
+   const button = document.querySelector(".js-generate-button"); button.addEventListener('click',() => {
+
+    let theJoke = document.createElement("p"); theJoke.innerHTML ="";//add interpolated variable of array
+
+
+
+    document.body.appendChild(theJoke);
+
+   });
+
+
+   const joke1 = "What did the football coach say to the broken vending machine? Give me my quarterback.";  
+
+   const joke2 = "How many tickles does it take to make an octopus laugh? Ten-tickles.";
+
+   const joke3 = "Hear about the new restaurant called Karma? There's no menu: You get what you deserve.";
+
+   const joke4 = "Why don't scientists trust atoms? Because they make up everything." ;
+
+   const joke5 = "I try not to tell dad jokes … But when I do, he thinks they're funny.";
+
+   const joke6 = "What did the buffalo say when his son left for college? Bison.";
+
+   const joke7 = "Have you heard about the restaurant on the moon? The food is great but there's no atmosphere.";
+
+   const joke8 = "Why don't eggs tell jokes? They might crack up!";
+
+   const joke9 = "what's Forest Gump's password? 1forest1";
+   
+
+
+
+   let myArray = [ `${joke1}`, "joke2","joke3","joke4","joke5", "joke6","joke7","joke8", "joke9"];
+
+   for (let i = 0; i < myArray.length; i++){console.log(myArray[i])}
+  //put practice version of for each loop on here 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     //function changeclassList(){}
+
+
+
+  
+   
+    
+
+
+
+    
+
+
+
+
+/*function handleCostKeydown (event){
+
+   
+  if (event.key === 'Enter') {calculateTotal();
+    } //click, keydown are events and onclick and onkeydown are event listener
+
+}
+
+
+
+  function calculateTotal(){
+
+    const inputElement = document.querySelector('.js-cost-input');
+
+    let cost = Number(inputElement.value); // when we get a value from the dom it's a string and if we want to turn it into a number we have to use the function Number()
+    console.log(cost)
+
+
+    if (cost < 40){cost = cost + 10;};
+   // console.log(cost)
+   // console.log(typeof cost)
+
+
+    document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+    
+  }*/
+
+
+    
+
+   
+
+
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>

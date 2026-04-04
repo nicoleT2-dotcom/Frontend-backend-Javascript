@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joke Generator project </title>
+
+  <link rel="stylesheet" href="joke-generator.css">
+
+  <style>
+    body{
+      background-color: rgb(255, 102, 222);
+
+    }
+
+    .description-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+    .description-para{
+      font-family: Arial;
+      font-size: 30px;
+    }
+
+
+    .joke-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 40px 40px;
+    }
+
+    .joke-button{
+      background-color: antiquewhite;
+      border:none;
+      border-radius: 5px;
+      font-size: 25px;
+      padding: 20px 30px;
+      cursor: pointer;
+      border-width: 5px;
+      
+    }
+
+      .joke-button:hover{
+      background-color:rgb(169, 80, 80);
+      border:none;
+      border-radius: 5px;
+      font-size: 25px;
+      padding: 20px 30px;
+      cursor: pointer;
+      border-width: 5px;
+      
+    }
+
+
+
+  
+  </style>
+
+
+</head>
+
+
+<body>
+  
+ <div class="description-div">
+
+    <p class="description-para">
+    Simple jokes to make you laugh
+    </p>
+
+  </div>
+
+  <div class="joke-div">
+
+    <button class="js-generate-button joke-button">
+    Tell me a joke
+    </button>
+
+  </div>
+
+
+  <script>
+
+    //function for even listner and add an event listener 
+    //Array of jokes to cyle through went clicked
+    //function that generates the html 
+    //change page's background colur when button is clicked 
+    //change button to say Another when we click the button 
+
+
+
+
+
+   const button = document.querySelector(".js-generate-button");
+   button.addEventListener("click", () => {clickingButton(), 
+   console.log("button has been clicked")}); //added click as event
+
+
+   function clickingButton (event){
+
+    if(){
+
+    }
+    
+    //generate htlm using js 
+
+
+
+   }
+   
+    
+
+
+
+    
+
+
+
+
+/*function handleCostKeydown (event){
+
+   
+  if (event.key === 'Enter') {calculateTotal();
+    } //click, keydown are events and onclick and onkeydown are event listener
+
+}
+
+
+
+  function calculateTotal(){
+
+    const inputElement = document.querySelector('.js-cost-input');
+
+    let cost = Number(inputElement.value); // when we get a value from the dom it's a string and if we want to turn it into a number we have to use the function Number()
+    console.log(cost)
+
+
+    if (cost < 40){cost = cost + 10;};
+   // console.log(cost)
+   // console.log(typeof cost)
+
+
+    document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+    
+  }*/
+
+
+    
+
+    //function pickAJoke (){}
+
+
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>
